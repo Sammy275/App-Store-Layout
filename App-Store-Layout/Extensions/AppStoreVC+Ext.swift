@@ -29,7 +29,8 @@ extension AppStoreVC {
             }
         }
         
-        appStoreCollectionView.contentInset = UIEdgeInsets(top: 0.0, left: 5.0, bottom: 0.0, right: 5.0)
+        appStoreCollectionView.contentInset = UIEdgeInsets(top: 0.0, left: 10.0, bottom: 0.0, right: 10.0)
+        appStoreCollectionView.contentInsetAdjustmentBehavior = .never
         appStoreCollectionView.setCollectionViewLayout(layout, animated: true)
     }
     
@@ -85,7 +86,7 @@ extension AppStoreVC {
     }
     
     func boundarySupplementaryHeaderItem() -> NSCollectionLayoutBoundarySupplementaryItem {
-        let headerElement: NSCollectionLayoutBoundarySupplementaryItem = .init(layoutSize: .init(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.1)), elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        let headerElement: NSCollectionLayoutBoundarySupplementaryItem = .init(layoutSize: .init(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(0.15)), elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
         
         return headerElement
     }

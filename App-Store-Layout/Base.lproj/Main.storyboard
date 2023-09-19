@@ -59,10 +59,10 @@
                                                             <rect key="frame" x="0.0" y="77" width="395" height="220"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPv-z3-5N4">
-                                                                    <rect key="frame" x="10" y="160" width="375" height="55"/>
+                                                                    <rect key="frame" x="10" y="150" width="375" height="65"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqq-hn-9KY">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="44"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="52"/>
                                                                             <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                                             <userDefinedRuntimeAttributes>
                                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -71,28 +71,24 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </view>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="evO-Db-gmM">
-                                                                            <rect key="frame" x="300" y="5" width="75" height="50"/>
+                                                                            <rect key="frame" x="300" y="5" width="75" height="60"/>
                                                                             <subviews>
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Aw-Ev-301">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="22.5"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="27.5"/>
                                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                                     <state key="normal" title="GET">
+                                                                                        <color key="titleColor" systemColor="labelColor"/>
                                                                                         <color key="titleShadowColor" systemColor="systemGrayColor"/>
                                                                                     </state>
-                                                                                    <buttonConfiguration key="configuration" style="tinted" title="GET">
+                                                                                    <buttonConfiguration key="configuration" style="filled" title="GET" cornerStyle="capsule">
                                                                                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                                                                         <color key="baseForegroundColor" systemColor="labelColor"/>
-                                                                                        <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
                                                                                     </buttonConfiguration>
-                                                                                    <userDefinedRuntimeAttributes>
-                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                                            <integer key="value" value="20"/>
-                                                                                        </userDefinedRuntimeAttribute>
-                                                                                    </userDefinedRuntimeAttributes>
                                                                                 </button>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-App Purchases" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZS-K0-I3k">
-                                                                                    <rect key="frame" x="0.0" y="27.5" width="75" height="22.5"/>
+                                                                                    <rect key="frame" x="0.0" y="32.5" width="75" height="27.5"/>
                                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
@@ -127,7 +123,7 @@
                                                                         <constraint firstItem="evO-Db-gmM" firstAttribute="leading" secondItem="JJG-cS-8Xf" secondAttribute="trailing" constant="5" id="FbT-hn-tsz"/>
                                                                         <constraint firstItem="aqq-hn-9KY" firstAttribute="height" secondItem="SPv-z3-5N4" secondAttribute="height" multiplier="0.8" id="J9G-ay-JZe"/>
                                                                         <constraint firstItem="aqq-hn-9KY" firstAttribute="top" secondItem="SPv-z3-5N4" secondAttribute="top" id="Niq-MR-CWZ"/>
-                                                                        <constraint firstAttribute="height" constant="55" id="Np4-PN-GLs"/>
+                                                                        <constraint firstAttribute="height" constant="65" id="Np4-PN-GLs"/>
                                                                         <constraint firstItem="JJG-cS-8Xf" firstAttribute="top" secondItem="SPv-z3-5N4" secondAttribute="top" id="RVT-ez-vXP"/>
                                                                         <constraint firstItem="evO-Db-gmM" firstAttribute="top" secondItem="SPv-z3-5N4" secondAttribute="top" constant="5" id="TLW-pE-6Hi"/>
                                                                         <constraint firstItem="aqq-hn-9KY" firstAttribute="width" secondItem="SPv-z3-5N4" secondAttribute="width" multiplier="0.12" id="l1f-2y-83y"/>
@@ -211,15 +207,10 @@
                                                         <constraint firstAttribute="height" constant="30" id="ITi-sM-cne"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="tinted" title="GET">
+                                                    <buttonConfiguration key="configuration" style="tinted" title="GET" cornerStyle="capsule">
                                                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                                         <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
                                                     </buttonConfiguration>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="20"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -259,20 +250,20 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-LV-LXF">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-LV-LXF">
                                                     <rect key="frame" x="110" y="5" width="297" height="93"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ReH-EA-thq">
-                                                            <rect key="frame" x="0.0" y="0.0" width="297" height="53"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ReH-EA-thq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="297" height="58"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SoundCloud - Music &amp; Playlist" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItD-6x-Hen">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="297" height="26.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="297" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your next songs and beats" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pm-E0-cUS">
-                                                                    <rect key="frame" x="0.0" y="26.5" width="297" height="26.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Find your next songs and beats" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pm-E0-cUS">
+                                                                    <rect key="frame" x="0.0" y="20.5" width="297" height="37.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -289,7 +280,7 @@
                                                                         <constraint firstAttribute="height" constant="30" id="eyk-fW-Zi6"/>
                                                                     </constraints>
                                                                     <state key="normal" title="Button"/>
-                                                                    <buttonConfiguration key="configuration" style="tinted" title="GET">
+                                                                    <buttonConfiguration key="configuration" style="tinted" title="GET" cornerStyle="capsule">
                                                                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                                                         <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
                                                                     </buttonConfiguration>
@@ -299,17 +290,17 @@
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </button>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-App Purchases" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yD3-CA-pzW">
-                                                                    <rect key="frame" x="75" y="0.0" width="90" height="30"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-App Purchases" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yD3-CA-pzW">
+                                                                    <rect key="frame" x="75" y="0.0" width="60" height="30"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="90" id="3rS-7p-LJc"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="3rS-7p-LJc"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71d-SQ-yFx">
-                                                                    <rect key="frame" x="165" y="0.0" width="132" height="30"/>
+                                                                    <rect key="frame" x="135" y="0.0" width="162" height="30"/>
                                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 </view>
                                                             </subviews>
